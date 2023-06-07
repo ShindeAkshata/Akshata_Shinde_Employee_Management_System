@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leave Application</title>
+    </head>
+    <body bgcolor=#A8F7AB>
+        <h1><center>Employee Leave Application Form</center></h1>
+
+<table bgcolor=pink align=center border="1px">
+    <tr>
+        <td>
+      <table align='left' cellspacing="8px" cellpadding=8px>
+        <form action="leave.php" method="post">
+
+          <label for="">Gender:</label>
+          <input type="radio" name="Gender" value="Male" required>Male
+          <input type="radio" name="Gender" value="Female" required>Female
+          <input type="radio" name="Gender" value="Other" required>Other
+             <br><br>
+
+             <label for="reason">Reason For Leave :</label>
+        <select id="reason" name="reason">
+          <option value="Sick">Sick</option>
+          <option value="Personal Leave">Personal Leave</option>
+          <option value="Unpaid Leave">Unpaid Leave</option>
+          <option value="Maternity/Paternity Leave">Maternity/Paternity Leave</option>
+          <option value="Other">Other</option>
+             
+             <br>
+        <tr>
+            <td><label for="duration">Duration Of Leave </label></td>
+            <td><input type="text" id="duration" name="duration" placeholder="Your leave duration in Days.."></td>
+          </tr>
+        <tr>
+          <td><label for="employeename">EmployeeName </label></td>
+          <td><input type="text" id="employeename" name="employeename"></td>
+        </tr>
+        <tr>
+          <td><label for="department">Department </label></td>
+          <td><input type="text" id="department" name="department" ></td>
+        </tr>
+        <tr>
+            <td><label for="designation">Designation </label></td>
+          <td><input type="text" id="designation" name="designation" placeholder="current profile in organisation.." ></td>
+        </tr>
+        <tr>
+            <td><label for="mobilenumber">Mobile Number</label></td>
+            <td><input type="text" id="mobilenumber" name="mobilenumber" ></td>
+          </tr>
+          <tr>
+          <td><label for="date">Date </label></td>
+            <td><input type="text" id="date" name="date" placeholder="DD/MM/YYYY"></td>
+          </tr>
+
+          <p>Click on the "Choose File" button to upload a file:</p>
+
+
+  <label for="filename">Upload Application/Medical Certificate</label>
+  <input type="file" id="filename" name="filename" accept=".jpg,.jpeg,.png" value="">
+  <br>
+
+                    <table bgcolor=#E6E6FA border="1px" align="center" cellpadding=8px cellpadding=8px>
+                        <tr>
+                          <td width="200px" height="100px" align="center" valign="top">
+
+                            <label for="">Manager / Supervisor Approval :</label><br>
+          <input type="radio" name="ApprovalStatus" value="Approved" required>Approved
+          <input type="radio" name="ApprovalStatus" value="Rejected" required>Rejected
+                          
+                             <br>
+                
+                          <td width="200px" height="100px" align="center" valign="top"><h3>Notice</h3>
+                            <p>Employee has to submit leave application form at least 14 days prior to leave taken
+                                Leave Application must be verified by hr. 
+                                  The Original Application will be given back to the HR. Employee will be given a copy.</p>
+                          </td>
+            </tr>
+  </table>
+      </table>
+        </td>
+    </tr>
+</table>
+
+<table align='center' color=pink cellspacing="8px" cellpadding=8px>
+    <tr>
+        <td align="center"><input type="submit" name="submit" value="submit"></td>
+        </tr>
+    </table>
+  </form>
+ <center><h3><li><a href="employeepage.php">Go To EmployeePage</a></li></h3></center>
+    </body>
+</html>

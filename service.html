@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 15px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 2px;
+          background-color: #f2f2f2;
+          padding: 5px;
+        }
+        
+        .column {
+          float: left;
+          width: 50%;
+          margin-top: 5px;
+          padding: 10px;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        @media screen and (max-width: 600px) {
+          .column, input[type=submit] {
+            width: 50%;
+            margin-top: 10;
+          }
+        }
+        </style>
+
+<body>
+
+<h2>Responsive Contact Section</h2>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <h1 align="left">Our Services</h1>
+    <table bgcolor="pink" border="1px" align="left" cellpadding=10px cellpadding=10px>
+        <tr>
+          <td width="400px" height="500px" align="left" valign="top"><p><h2>Happy To Have You Here!</h2>
+            We Provide Services specially in these areas 
+            </p>
+                <br>
+                <table bgcolor=lightgreen border="1px" align="left" cellpadding=10px cellpadding=10px>
+              <tr>
+               <td width="250px" height="50px" align="center" valign="bottom"><p> Artificial Intelligence<br>
+                </p></td>
+                    </tr>
+                  </table>
+                  <br><br>
+                  <table bgcolor=#EE82EE border="1px" align="left" cellpadding=10px cellpadding=10px>
+                    <tr>
+                     <td width="250px" height="50px" align="center" valign="bottom"><p> Cyber Security  <br>
+                      </p></td>
+                          </tr>
+                        </table>
+                        <br><br>
+                        <table bgcolor=#FFFDDO border="1px" align="left" cellpadding=10px cellpadding=10px>
+                            <tr>
+                             <td width="250px" height="50px" align="center" valign="bottom"><p> Software Development <br> 
+                              </p></td>
+                                  </tr>
+                                </table>
+                                <br><br>
+                                <table bgcolor=#BDA667 border="1px" align="left" cellpadding=10px cellpadding=10px>
+                                    <tr>
+                               <td width="250px" height="50px" align="center" valign="bottom"><p>Data Science   <br>
+                                      </p></td>
+                                          </tr>
+                                        </table>
+                                        <br><br>
+                                   <table bgcolor=lightblue border="1px" align="left" cellpadding=10px cellpadding=10px>
+                                            <tr>
+                                  <td width="250px" height="50px" align="center" valign="bottom"><p>Web Development  <br>
+                                      </p></td>
+                                                  </tr>
+                                                </table>
+                                                <br><br>
+          </td>
+  
+        </tr>
+      </table>
+  </div>
+  <div class="row">
+    <div class="column">
+    
+    </div>
+    <div class="column">
+      <form action="page.php" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Your email address..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</head>
+</html>

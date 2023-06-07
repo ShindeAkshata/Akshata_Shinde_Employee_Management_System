@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: red;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: lightgreen;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<h2 style="background-color:#D869B6;"><center>Meet Our Team Leaders!</center></h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2 style="background-color: aqua;">Akshata</h2>
+        <p class="title">Artificial Intelligence Team Leader</p>
+        <p>Experience in this field : 10 Years.</p>
+        <p>arintel@gmail.com</p>
+        <p><button class="button">Contact Through Email</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2 style="background-color: palegreen;">Kartik</h2>
+        <p class="title">Cyber Security Team Leader</p>
+        <p>Experience in this field : 12 Years</p>
+        <p>csecurity@gmail.com</p>
+        <p><button class="button">Contact Through Email</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2 style="background-color: palevioletred;">Ananya</h2>
+        <p class="title">Software Development Team Leader</p>
+        <p>Experience in this field : 8 years</p>
+        <p>sdevlop@gmail.com</p>
+        <p><button class="button">Contact Through Email</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+  <div class="card">
+    <div class="container">
+      <h2 style="background-color: crimson;">Arjun</h2>
+      <p class="title">Data Science Team Leader</p>
+      <p>Experience in this field : 15 years.</p>
+      <p>datascience@gmail.com</p>
+      <p><button class="button">Contact Through Email</button></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="column">
+  <div class="card">
+    <div class="container">
+      <h2 style="background-color: peru;">Bhavika</h2>
+      <p class="title">Web Development Team Leader</p>
+      <p>Experience in this field : 18 years</p>
+      <p>webdevlop@gmail.com</p>
+      <p><button class="button">Contact Through Email</button></p>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

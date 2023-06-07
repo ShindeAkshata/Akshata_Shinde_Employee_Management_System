@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Employee Feedback</title>
+    </head>
+    <body bgcolor=#A9A9A9>
+        <h1 align="center">Feedback Form</h1>
+
+        <table bgcolor=#FFFDDO align=center border="5px">
+
+            <tr>
+                <td width="500px" height="300px" align="center" valign="top">
+              <table align='left' cellspacing="10px" cellpadding=10px>
+            <form action="connect.php" method="post">
+           
+<div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+    <br><br>
+        <label for="fname">Employee Name :</label>
+        <input type="text" id="fname" name="employeename" placeholder="Your name.."><br><br>
+            <label for="email">Email Address :</label>
+        <input type="text" id="email" name="email" placeholder="Your email address.."><br><br>
+        <label for="mobilenumber">Mobile Number :</label>
+        <input type="text" id="mobilenumber" name="mobilenumber" placeholder="Your Mobile Number.."><br><br>
+        <br>
+
+
+        <label for="WorkCulture">Work Culture And Values :</label>
+        <select id="WorkCulture" name="WorkCulture">
+          <option value="Excellent">Excellent</option>
+          <option value="Very Good">Very Good</option>
+          <option value="Good">Good</option>
+          <option value="Average">Average</option>
+          <option value="Poor">Poor</option>
+        </select><br><br>
+
+        <label for="CareerGrowth">Career Growth And Opportunities :</label>
+        <select id="CareerGrowth" name="CareerGrowth">
+          <option value="Outstanding">Outstanding</option>
+          <option value="Very High">Very High</option>
+          <option value="High">High</option>
+          <option value="Low">Low</option>
+          <option value="Very Low">Very Low</option>
+        </select><br><br>
+
+        <label for="WorkEnvironment">How is Work Environment :</label>
+        <select id="WorkEnvironment" name="WorkEnvironment">
+          <option value="Cooperative And Safe">Cooperative And Safe</option>
+          <option value="Healthy">Healthy</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Unhealthy">Unhealthy</option>
+        </select><br><br>
+
+          <label for="WorkQuality">Work Quality :</label>
+        <select id="WorkQuality" name="WorkQuality">
+          <option value="Very Satisfied">Very Satisfied</option>
+          <option value="Satisfied">Satisfied</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Unsatisfied">Unsatisfied</option>
+          <option value="Very Unsatisfied">Very Unsatisfied</option>
+        </select><br><br>
+        <br>
+
+          <label for="">Overall Rating:</label>
+          <input type="radio" name="OverallRating" value="Five" required>Five
+          <input type="radio" name="OverallRating" value="Four" required>Four
+          <input type="radio" name="OverallRating" value="Three" required>Three
+          <input type="radio" name="OverallRating" value="Two"  required>Two
+          <input type="radio" name="OverallRating" value="One" required>One
+          
+          
+        </select><br><br><br>
+        <label for="suggestion">Your Suggestion For Better Service : </label><br>
+        <textarea id="suggestion" name="suggestion" placeholder="Write something.." style="height:80px"></textarea><br><br>
+        <input type="submit" value="Submit" style="height:30px"><br><br>
+      </form>
+    </div>
+  </div>
+</table>
+                </td>
+            </tr>
+        </table>
+       <center><h3><li><a href="employeepage.php">Go To EmployeePage</a></li></h3></center>
+</body>
+</head>
+</html>
